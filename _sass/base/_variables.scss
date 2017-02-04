@@ -1,4 +1,4 @@
-// Glovbal variables
+// Global variables
 // Module-specific variables
 // are bundled with the module
 
@@ -20,8 +20,10 @@ $spacing-2x: $spacing-1x * 2;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-gray: #e0e0e0;
-$text-color: #444;
-$link-color: $color-gray;
+$color-accent: #A90000;
+$color-text: #444;
+$color-text-white: $color-white;
+$color-link: $color-gray;
 
 // Font Stack
 

@@ -1,0 +1,26 @@
+#navbar {
+	background-color: $color-black;
+	width: $width-100;
+
+	.navbar-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		position: relative;
+		flex-wrap: nowrap;
+		margin: 0;
+	}
+	
+	.navbar-item {
+		height: 100%;
+		list-style: none;
+		padding: 3rem;
+	}
+	
+	.navbar-link {
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+	}
+}

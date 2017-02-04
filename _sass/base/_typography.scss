@@ -7,14 +7,14 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: $font-stack;
-  color: $text-color;
+  color: $color-text;
 }
 
 a {
-  color: $link-color;
+  color: $color-link;
   
   &:hover {
-	color: darken($link-color, 10);
+	color: darken($color-link, 10);
   }
 }
 

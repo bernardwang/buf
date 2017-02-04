@@ -1,0 +1,27 @@
+#landing {
+	background-image: url("../img/landing-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.row {
+		height: 70vh;
+		position: relative;
+	}
+
+	.column {
+		height: 100%;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.landing-text {
+		width: 100%;
+		color: $color-text-white;
+		font-weight: 800;
+	}
+}

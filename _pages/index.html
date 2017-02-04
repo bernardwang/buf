@@ -2,15 +2,12 @@
   page: "index"
 }%}
 
-	<div class="container">
+{% include 'nav.html' %}
 
-		<!-- columns should be the immediate child of a .row -->
-		<div class="row">
-			<div class="twelve column">
-				<h1>buf</h1>
-			</div>
-		</div>
-	</div>
+<main>
+	{% include 'landing.html' %}
+	{% include 'about.html' %}
+</main>
 
 
 {% include 'scripts.html' %}
