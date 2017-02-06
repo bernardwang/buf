@@ -1,6 +1,8 @@
 #navbar {
 	background-color: $color-black;
 	width: 100%;
+	position: sticky;
+	top: 0;
 
 	.navbar-list {
 		width: 100%;

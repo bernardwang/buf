@@ -1,4 +1,4 @@
-#landing {
+#home {
 	background-image: url("../img/landing-hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -16,12 +16,17 @@
 		justify-content: center;
 		align-items: center;
 		align-content: center;
-		text-align: center;
+		//text-align: center;
 	}
 
-	.landing-text {
+	.title,
+	.desc {
 		width: 100%;
 		color: $color-text-white;
 		font-weight: 800;
+	}
+
+	.title {
+		font-size: 7rem;
 	}
 }
