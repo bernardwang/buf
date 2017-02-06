@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	$('#navbar-icon').click(function(){
-		console.log(this);
-		$(this).toggleClass('open');
+	$('#js-navbar-icon').click(function(){
+		$('#js-navbar').toggleClass('is-open');
 	});
 });

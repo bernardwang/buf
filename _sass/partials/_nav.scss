@@ -1,8 +1,9 @@
-#navbar {
+#js-navbar {
 	background-color: $color-black;
 	width: 100%;
 	position: sticky;
 	top: 0;
+	z-index: 2;
 
 	.navbar-list {
 		width: 100%;
@@ -31,7 +32,7 @@
 		text-align: center;
 	}
 
-	#navbar-icon {
+	.navbar-icon {
 		display: none;
 		width: 3.5rem;
 		height: 2.5rem;
@@ -41,26 +42,9 @@
 		transform: rotate(0deg);
 		transition: .5s ease-in-out;
 		cursor: pointer;
-
-		&.open {
-			span:nth-child(1){
-				transform: rotate(45deg);
-				top: 0rem;
-				left: 0.4rem;
-			}
-			span:nth-child(2){
-				width: 0%;
-				opacity: 0;
-			}
-			span:nth-child(3){
-				transform: rotate(-45deg);
-				top: 2.5rem;
-				left: 0.4rem;
-			}
-		}
 	}
 
-	#navbar-icon span {
+	.navbar-icon span {
 		display: block;
 		position: absolute;
 		height: 0.4rem;
@@ -85,10 +69,29 @@
 			transform-origin: left center;
 		}
 	}
+
+	&.is-open {
+		.navbar-icon span {
+			&:nth-child(1){
+				transform: rotate(45deg);
+				top: 0rem;
+				left: 0.4rem;
+			}
+			&:nth-child(2){
+				width: 0%;
+				opacity: 0;
+			}
+			&:nth-child(3){
+				transform: rotate(-45deg);
+				top: 2.5rem;
+				left: 0.4rem;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $breakpoint-large) {
-	#navbar {
+	#js-navbar {
 		.navbar-list {
 			justify-content: space-between;
 		}
@@ -99,8 +102,9 @@
 }
 
 @media screen and (max-width: $breakpoint-medium) {
-	#navbar {
+	#js-navbar {
 		.navbar-list {
+			height: 100;
 			flex-direction: column;
 			padding-top: 6rem;
 		}
@@ -110,8 +114,13 @@
 			margin-top: 3rem;
 			margin-bottom: 3rem;
 		}
-		#navbar-icon {
+		.navbar-icon {
 			display: block;
+		}
+		&.is-open {		
+			.navbar-item {
+				display: block;
+			}
 		}
 	}
 }
