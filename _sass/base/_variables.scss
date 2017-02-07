@@ -22,14 +22,40 @@ $spacing-1x: 1rem;
 $spacing-2x: $spacing-1x * 2;
 
 // Colors
-$color-black: #000000;
+$color-black: #040101;
+//$color-black: #D3313E;
 $color-white: #ffffff;
 $color-gray: #e0e0e0;
+$color-red: #D3313E;
+$color-darkred: #432128;
+$color-yellow: #D59E0F;
 $color-accent: #A90000;
-$color-text: #444;
+$color-text: #111;
 $color-text-white: $color-white;
 $color-link: $color-gray;
 
 // Font Stack
 
-$font-stack: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-face {
+	font-family: FranklinGothicBook;
+	src: url(../fonts/FranklinGothicBook.ttf);
+}
+
+@font-face {
+	font-family: FranklinGothicBookItalic;
+	src: url(../fonts/FranklinGothicBookItalic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: FranklinGothicMedium;
+	src: url(../fonts/FranklinGothicMedium.ttf);
+}
+
+@font-face {
+	font-family: FranklinGothicMediumItalic;
+	src: url(../fonts/FranklinGothicMediumItalic.ttf);
+	font-style: italic;
+}
+
+$font-primary: "FranklinGothicBook", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

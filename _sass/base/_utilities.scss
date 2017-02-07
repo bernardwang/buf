@@ -28,9 +28,11 @@
 }
 
 .title {
-
+	text-transform: uppercase;
+	font-family: $font-primary;
+	font-weight: bold;
 }
 
 .desc {
-	
+	font-family: $font-primary;
 }

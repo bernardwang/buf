@@ -1,0 +1,14 @@
+@mixin text-shadow-block($height) {
+	@for $i from 1 through $height {
+				$distance: 100vw;	// TODO: fix hardcoded;
+				$direction-left: 1;
+				$direction-right: -1;
+	
+				&.left-#{$i} {
+					@include page-slide($distance, $direction-left, $i);
+				}
+				&.right-#{$i} {
+					@include page-slide($distance, $direction-right, $i);
+				}
+			}
+}
