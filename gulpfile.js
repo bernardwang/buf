@@ -2,6 +2,7 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync'),
     reload      = browserSync.reload,
     sass        = require('gulp-sass'),
+    autoprefixer= require('gulp-autoprefixer'),
     pleeease    = require('gulp-pleeease'),
     rename      = require('gulp-rename'),
     uglify      = require('gulp-uglify'),
@@ -55,6 +56,10 @@ gulp.task('pages', function() {
 gulp.task('sass', function() {
   gulp.src(path.join(paths.sass, '*.scss'))
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      add: true
+    }))
     .pipe(gulp.dest(paths.outputCss))
     .pipe(reload({stream:true}));
 });
